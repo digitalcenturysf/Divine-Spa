@@ -13,7 +13,7 @@ get_header(); ?>
 			  <div class="container">
 			    <div class="row"> 
 			      <div class="col-lg-9 col-md-9 latest-blog-area">
-			        <div class="blog-box"> 
+			        <div id="masonry-loop" class="blog-box"> 
 						<?php
 						if ( have_posts() ) :  
 							/* Start the Loop */

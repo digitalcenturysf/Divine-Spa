@@ -1,24 +1,44 @@
-=== DCSF Divine ===
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+=== Divine Spa Lite ===
+
+Contributors: digitalcenturysf
+Tags: blog, news, e-commerce, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, flexible-header, sticky-post, translation-ready
 Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 1.0.1
+Tested up to: 5.0.2 
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-A starter theme called DCSF Divine, or underscores.
+
+Divine Spa Lite is a smart and unique multi-purpose WordPress Theme for all kind of business.
+
 == Description ==
-Hi. I'm a starter theme called DCSF Divine, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-== Installation ==
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-== Frequently Asked Questions ==
-= Does this theme support any plugins? =
-DCSF Divine includes support for Infinite Scroll in Jetpack.
+
+Divine Spa Lite is a smart and unique multi-purpose WordPress Theme for all kind of business. Perfectly suits for business companies, corporate agencies, startups, freelancers, organizations, personal portfolio and creative minds as well. This theme consists of well-organized components – so it’s easy to modify and customize everything. If you need support, please send us an email using the contact form on our user page. I usually respond to support requests within 24 hours so please feel free to contact me with problems of any kind or even simple questions, I don’t mind responding.
+
+View more themes from this author: https://digitalcenturysf.com
+
+  
 == Changelog ==
-= 1.0 - May 12 2015 =
-* Initial release
-== Credits ==
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+  
+= 1.0.0 =
+* Initial Release
+
+== Theme License ==
+The Divine Spa Lite WordPress theme is 100% GPLv2. See headers of files for further details.GNU GPL v2.0 or later
+
+
+== Resources ==
+ 
+* logo.png © 2018 digitalcenturysf, Custom made 
+* screenshot.png © 2018 Pixabay, CC0, 
+	- https://pixabay.com/en/toner-skin-skincare-cooling-facial-906142/
+	- https://pixabay.com/en/towel-rose-clean-care-salon-spa-759980/
+	- https://pixabay.com/en/wellness-massage-relax-relaxing-589770/
+
+* Font Awesome © 2018 Dave Gandy, STL, http://fontawesome.io/
+* Bootstrap © 2011-2016 Twitter, MIT, http://getbootstrap.com  
+* jQuery meanMenu © 2012-2014 Chris Wharton - MeanThemes, GPL, https://github.com/meanthemes/meanMenu
+ 
+
+ 
+ 
+ 

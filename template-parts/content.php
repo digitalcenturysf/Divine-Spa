@@ -7,7 +7,7 @@
  * @package Divine_Spa_Lite
  */
 ?>
-<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
+<section id="post-<?php the_ID(); ?>" <?php post_class('masonry-entry'); ?>> 
   	<?php $divine_spa_lite_post_cls = "no-img";
   	if(has_post_thumbnail()){ the_post_thumbnail('divine-spa-lite-blog-post'); $divine_spa_lite_post_cls = ""; } ?>
     <div class="blog-description <?php echo esc_attr($divine_spa_lite_post_cls); ?>"> 

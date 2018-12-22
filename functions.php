@@ -62,11 +62,23 @@ function divine_spa_lite_setup() {
 		'gallery',
 		'caption',
 	) );
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'divine_spa_lite_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+
+	/*
+	 * Custom Logo
+	 */ 
+  	add_theme_support( 'custom-logo', array(
+	   'height'      => 39,
+	   'width'       => 139,
+	   'flex-width'  => true,
+       'flex-height' => true,'header-text' => array( 'logo-area' ),
+	) );
+
+	add_theme_support( 'custom-header', array(
+		'flex-width'    => true, 
+		'flex-height'    => true, 
+		'default-image' => get_template_directory_uri() . '/assets/images/banner.jpg',
+	) );
+
 	/*
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, icons, and column width.
@@ -126,20 +138,17 @@ add_action( 'after_setup_theme', 'divine_spa_lite_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function divine_spa_lite_scripts() {
-	global $post,$divine_spa_lite;
-	$divine_spa_lite_opt = new DivineSpaLiteFrameworkOpt();
+	global $post; 
  	// LOAD FONTS
 	 wp_enqueue_style( 'divine-spa-lite-fonts', divine_spa_lite_fonts_url(), array(), '1.0.0' );
 
-	wp_enqueue_style( 'bootstrap', DIVINE_SPA_LITE_CSS . 'bootstrap.min.css' );
-	wp_enqueue_style( 'animate', DIVINE_SPA_LITE_CSS . 'animate.css' ); 
-	wp_enqueue_style( 'meanmenu', DIVINE_SPA_LITE_CSS . 'meanmenu.min.css' ); 
+	wp_enqueue_style( 'bootstrap', DIVINE_SPA_LITE_CSS . 'bootstrap.min.css' ); 
 	wp_enqueue_style( 'font-awesome', DIVINE_SPA_LITE_CSS . 'font-awesome.min.css' ); 
 	wp_enqueue_style( 'divine-spa-lite-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'divine-spa-lite-responsive', DIVINE_SPA_LITE_CSS . 'responsive.css' ); 
 
 	wp_enqueue_script( 'modernizr', DIVINE_SPA_LITE_JS . 'vendor/modernizr-2.8.3.min.js', array('jQuery'), '2.8.3', false ); 
-	wp_enqueue_script( 'bootstrap', DIVINE_SPA_LITE_JS . 'bootstrap.min.js', array('jquery'), '3.3.5', true );
+	wp_enqueue_script( 'bootstrap', DIVINE_SPA_LITE_JS . 'bootstrap.min.js', array('jquery','jquery-masonry'), '3.3.5', true );
 	wp_enqueue_script( 'meanmenu', DIVINE_SPA_LITE_JS . 'jquery.meanmenu.js', array(), '2.0.8', true );  
 	wp_enqueue_script( 'divine-spa-lite-main', DIVINE_SPA_LITE_JS . 'main.js', array(), '1.0', true );
 	wp_enqueue_script( 'divine-spa-lite-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -148,20 +157,38 @@ function divine_spa_lite_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	// inline style css
-	$divine_spa_lite_custom_css = "";
-    $divine_spa_lite_adv_css = $divine_spa_lite['custom_css']; //E.g. #FF0000
+	$divine_spa_lite_custom_css = "";  
 
-    if(isset($divine_spa_lite['logo-width']) && !empty($divine_spa_lite['logo-width'])){ 
-    	$divine_spa_lite_logo_wd = $divine_spa_lite['logo-width'];
+    $divine_spa_lite_text_color = get_theme_mod( 'header_textcolor' );
+    if(isset($divine_spa_lite_text_color) && !empty($divine_spa_lite_text_color)){ 
         $divine_spa_lite_custom_css .= "
-			.main-header-area .logo-area img{
-				width:{$divine_spa_lite_logo_wd};
+            .heading-cmn-area h2{
+                color:#{$divine_spa_lite_text_color};
+            }
+        ";
+    } 
+    if(is_page()){ 
+    	$divine_spa_lite_hdr_img_id = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full',true); 
+    	if(has_post_thumbnail()){
+    		$divine_spa_lite_hdr_img = $divine_spa_lite_hdr_img_id[0];
+    	}else{
+    		$divine_spa_lite_hdr_img = get_header_image();	
+    	}
+    }else{
+    	$divine_spa_lite_hdr_img = get_header_image();	
+    }
+    
+    if(isset($divine_spa_lite_hdr_img) && !empty($divine_spa_lite_hdr_img)){ 
+        $divine_spa_lite_custom_css .= "
+			.about-banner-area{
+                background-image: url({$divine_spa_lite_hdr_img}); 
 			}
         ";
     }  
-    
+
     $divine_spa_lite_custom_css .= "{$divine_spa_lite_adv_css}";
     wp_add_inline_style( 'divine-spa-lite-style', $divine_spa_lite_custom_css );
+ 
 
 }
 add_action( 'wp_enqueue_scripts', 'divine_spa_lite_scripts' );
@@ -250,7 +277,7 @@ if ( ! function_exists( 'divine_spa_lite_pagination' ) ){
 		if ( $links ) :
 		?>  
 		<div class="pagination-area">
-		    <?php echo wp_kses($links); ?> 
+		    <?php echo wp_kses_post($links); ?> 
 		</div> 
 		<?php
 		endif;
@@ -348,47 +375,38 @@ add_action( 'widgets_init', 'divine_spa_lite_widgets_init' );
  */ 
 function divine_spa_lite_breadcrumb(){
 	global $post,$dcsf_divine;	
-	if(isset($dcsf_divine['blog-title'])){
-		$dcsf_divine_blog_title=  $dcsf_divine['blog-title'];
-	}else{
-		$dcsf_divine_blog_title=  esc_html__('Blog','divine-spa-lite');
-	} 
-
+	$dcsf_divine_blog_title=  esc_html__('Blog','divine-spa-lite');
 	if(is_front_page() && is_home()){ 
 		echo esc_html($dcsf_divine_blog_title); 
 
 	}elseif(is_home() || is_page()){ 
-	    if( is_page() && ''!=get_post_meta($post->ID,'_dcsf_divine_page_banner_title',true)){
-	        $dcsf_divine_ptitle = get_post_meta($post->ID,'_dcsf_divine_page_banner_title',true); 
+	    if( is_page()){
+	        $dcsf_divine_ptitle = get_the_title();
 		}else{
 			$dcsf_divine_ptitle =  get_the_title( get_option('page_for_posts', true) );
 		}
 	  echo esc_html($dcsf_divine_ptitle);
 	}elseif(is_single()){
-		if(isset($dcsf_divine['single-title']) && (''!=$dcsf_divine['single-title'])){
-			printf( '<span>' . $dcsf_divine['single-title'] . '</span>' ); 
-		}else{
-			the_title();
-		}  
-	}elseif(is_search()){
-		if(isset($dcsf_divine['srch-title']) && (''!=$dcsf_divine['srch-title'])){
-			printf( '<span>' . $dcsf_divine['srch-title'] . '</span>' ); 
-		}else{
-			printf( '<span>' . get_search_query() . '</span>' );
-		}  
+		the_title();
+	}elseif(is_search()){   
+		printf( '<span>%s</span>', get_search_query() ); 
 	}elseif(is_category() || is_tag()) {
-		if(isset($dcsf_divine['archv-title']) && (''!=$dcsf_divine['archv-title'])){
-			printf($dcsf_divine['archv-title']); 
-		}else{
-			single_cat_title("", true); 
-		}  
+		single_cat_title("", true);
 	}elseif(is_archive()){ 
-		if(isset($dcsf_divine['archv-title']) && (''!=$dcsf_divine['archv-title'])){
-			printf($dcsf_divine['archv-title']); 
-		}else{
-	 		if ( class_exists('WooCommerce' ) ){ if(is_shop() || is_product_category() || is_product_tag() ){ woocommerce_page_title(); }else{ echo get_the_date('F Y'); } }else{ echo get_the_date('F Y'); } 
-		}   
-	}elseif(is_404()){ esc_html_e('404 Error','divine-spa-lite');}else{ the_title();}
+		if ( class_exists('WooCommerce' ) ){
+			if(is_shop() || is_product_category() || is_product_tag() ){
+				woocommerce_page_title(); 
+			}else{ 
+				echo get_the_date('F Y'); 
+			} 
+		}else{ 
+			echo get_the_date('F Y'); 
+		}
+	}elseif(is_404()){ 
+		esc_html_e('404 Error','divine-spa-lite');
+	}else{ 
+		the_title();
+	}
 }
 
 
