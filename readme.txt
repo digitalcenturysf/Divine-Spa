@@ -29,7 +29,8 @@ The Divine Spa Lite WordPress theme is 100% GPLv2. See headers of files for furt
 == Resources ==
  
 * logo.png © 2018 digitalcenturysf, Custom made 
-* screenshot.png © 2018 Pixabay, CC0, 
+* screenshot.png © 2018 Pixabay & pxhere, CC0, 
+	- https://pxhere.com/en/photo/1198478
 	- https://pixabay.com/en/toner-skin-skincare-cooling-facial-906142/
 	- https://pixabay.com/en/towel-rose-clean-care-salon-spa-759980/
 	- https://pixabay.com/en/wellness-massage-relax-relaxing-589770/
