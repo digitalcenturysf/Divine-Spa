@@ -1,7 +1,7 @@
 === Divine Spa ===
 
 Contributors: digitalcenturysf
-Tags: blog, news, e-commerce, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, flexible-header, sticky-post, translation-ready
+Tags: news, blog, e-commerce, two-columns, three-columns, left-sidebar, right-sidebar,  custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, sticky-post,  translation-ready
 Requires at least: 4.0
 Tested up to: 5.0.2 
 Stable tag: 1.0.0
