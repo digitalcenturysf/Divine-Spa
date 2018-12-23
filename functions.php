@@ -76,7 +76,7 @@ function divine_spa_lite_setup() {
 	add_theme_support( 'custom-header', array(
 		'flex-width'    => true, 
 		'flex-height'    => true, 
-		'default-image' => get_template_directory_uri() . '/assets/images/banner.jpg',
+		'default-image' => '',
 	) );
 
 	/*

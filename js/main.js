@@ -19,13 +19,8 @@
   // pagination  
   $(".pagination-area ul.page-numbers span.current").replaceWith('<a href="#" class="active">' + $(".pagination-area ul.page-numbers span.current").html() + "</a>"); 
   $('.pagination-area ul.page-numbers').addClass('pagination pagination-lg');
-    
-  // widget search
-  $(".widget_search form.search-form .search-field").unwrap(); 
-  $(".widget_search form.search-form span.screen-reader-text").remove();
-  $(".widget_search form.search-form .search-submit").remove(); 
-  $(".widget_search form.search-form .search-field").attr("placeholder","Search ...");
-   
+  
+  //  comment style
   $(".blog-single-area ol.comment-list li .comment-reply-link").prepend('<i class="fa fa-reply"></i> ');
   $(".comment-respond").addClass('blog-comment-bx');
   $(".comment-form-author").replaceWith('<div class="col-lg-6 col-md-6">' + $(".comment-form-author").html() + "</div>"); 

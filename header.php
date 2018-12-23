@@ -52,6 +52,25 @@ wp_head(); ?>
 	</header>
 	<!-- header area end here --> 
     
-    <?php get_template_part('banner'); ?>  
+    <?php 
+
+    if(is_page()){ 
+    	$divine_spa_lite_hdr_img_id = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full',true); 
+    	if(has_post_thumbnail()){
+    		$divine_spa_lite_hdr_img = 1;
+    	}else{
+    		$divine_spa_lite_hdr_img = 0;	
+    	}
+    }else{
+    	if(get_header_image()){
+    		$divine_spa_lite_hdr_img = 1;
+    	}else{
+    		$divine_spa_lite_hdr_img = 0;	
+    	}
+    		
+    }
+    if($divine_spa_lite_hdr_img==1){ 
+    	get_template_part('banner'); 
+	} ?>  
  
 	<div id="content" class="site-content">
