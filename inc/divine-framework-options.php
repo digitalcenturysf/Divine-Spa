@@ -1,5 +1,5 @@
 <?php  
-function divine_spa_lite_logo(){
+function divine_spa_logo(){
    $logo = get_custom_logo(); 
     if( !empty($logo) ){
         the_custom_logo();
@@ -8,7 +8,7 @@ function divine_spa_lite_logo(){
    <?php } 
 }   
 // copyright text
-function divine_spa_lite_copyright_text(){
+function divine_spa_copyright_text(){
     $copy_text = get_theme_mod( 'v_copyright_text' );
     if(!empty($copy_text)){
     ?>
@@ -16,11 +16,11 @@ function divine_spa_lite_copyright_text(){
     <?php
     }else{
         $url2 =  esc_url('https://digitalcenturysf.com/templates/'); 
-        $text =  esc_html__('Copyright &copy; 2018 ','divine-spa-lite');
+        $text =  esc_html__('Copyright &copy; 2018 ','divine-spa');
         $text2 =  get_bloginfo('name');
         $text3 =  ' |';
         $text4 = $text.$text2.$text3;
-        $text5 =  esc_html__('WordPress Templates','divine-spa-lite');
+        $text5 =  esc_html__('WordPress Templates','divine-spa');
         printf( '<p>%s Powered by <a class="credits" href="%s">%s</a></p>', esc_html($text4), esc_url($url2), esc_html($text5) );
     }
 

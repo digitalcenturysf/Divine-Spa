@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Divine_Spa_Lite
+ * @package Divine_Spa
  */
 /**
  * Jetpack setup function.
@@ -12,21 +12,21 @@
  * See: https://jetpack.com/support/infinite-scroll/
  * See: https://jetpack.com/support/responsive-videos/
  */
-function divine_spa_lite_jetpack_setup() {
+function divine_spa_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'divine_spa_lite_infinite_scroll_render',
+		'render'    => 'divine_spa_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 }
-add_action( 'after_setup_theme', 'divine_spa_lite_jetpack_setup' );
+add_action( 'after_setup_theme', 'divine_spa_jetpack_setup' );
 /**
  * Custom render function for Infinite Scroll.
  */
-function divine_spa_lite_infinite_scroll_render() {
+function divine_spa_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

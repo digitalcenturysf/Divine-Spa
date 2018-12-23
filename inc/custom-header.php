@@ -12,31 +12,31 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Divine_Spa_Lite
+ * @package Divine_Spa
  */
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses divine_spa_lite_header_style()
+ * @uses divine_spa_header_style()
  */
-function divine_spa_lite_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'divine_spa_lite_custom_header_args', array(
+function divine_spa_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'divine_spa_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'divine_spa_lite_header_style',
+		'wp-head-callback'       => 'divine_spa_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'divine_spa_lite_custom_header_setup' );
-if ( ! function_exists( 'divine_spa_lite_header_style' ) ) :
+add_action( 'after_setup_theme', 'divine_spa_custom_header_setup' );
+if ( ! function_exists( 'divine_spa_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see divine_spa_lite_custom_header_setup().
+ * @see divine_spa_custom_header_setup().
  */
-function divine_spa_lite_header_style() {
+function divine_spa_header_style() {
 	$header_text_color = get_header_textcolor();
 	/*
 	 * If no custom options for text are set, let's bail.

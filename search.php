@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Divine_Spa_Lite
+ * @package Divine_Spa
  */ 
 get_header(); ?>
 	<div id="primary" class="content-area">
@@ -31,7 +31,7 @@ get_header(); ?>
 						endif; ?> 
 			        </div>
 			        <div class="clearfix"></div>
-			        <?php divine_spa_lite_pagination(); ?> 
+			        <?php divine_spa_pagination(); ?> 
 			      </div> 
 				   <div class="col-lg-3 col-md-3 sidebar-area">
 				       <?php get_sidebar(); ?>

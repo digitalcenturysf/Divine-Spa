@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *`
- * @package Divine_Spa_Lite
+ * @package Divine_Spa
  */
 
 get_header(); ?>

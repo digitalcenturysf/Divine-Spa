@@ -1,4 +1,4 @@
-=== Divine Spa Lite ===
+=== Divine Spa ===
 
 Contributors: digitalcenturysf
 Tags: blog, news, e-commerce, one-column, two-columns, right-sidebar, custom-header, custom-menu, editor-style, featured-images, flexible-header, sticky-post, translation-ready
@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Divine Spa Lite is a smart and unique multi-purpose WordPress Theme for all kind of business.
+Divine Spa is a smart and unique multi-purpose WordPress Theme for all kind of business.
 
 == Description ==
 
-Divine Spa Lite is a smart and unique multi-purpose WordPress Theme for all kind of business. Perfectly suits for business companies, corporate agencies, startups, freelancers, organizations, personal portfolio and creative minds as well. This theme consists of well-organized components – so it’s easy to modify and customize everything. If you need support, please send us an email using the contact form on our user page. I usually respond to support requests within 24 hours so please feel free to contact me with problems of any kind or even simple questions, I don’t mind responding.
+Divine Spa is a smart and unique multi-purpose WordPress Theme for all kind of business. Perfectly suits for business companies, corporate agencies, startups, freelancers, organizations, personal portfolio and creative minds as well. This theme consists of well-organized components – so it’s easy to modify and customize everything. If you need support, please send us an email using the contact form on our user page. I usually respond to support requests within 24 hours so please feel free to contact me with problems of any kind or even simple questions, I don’t mind responding.
 
 View more themes from this author: https://digitalcenturysf.com
 
@@ -24,7 +24,7 @@ View more themes from this author: https://digitalcenturysf.com
 
 
 == Theme License ==
-The Divine Spa Lite WordPress theme is 100% GPLv2. See headers of files for further details.GNU GPL v2.0 or later
+The Divine Spa WordPress theme is 100% GPLv2. See headers of files for further details.GNU GPL v2.0 or later
 
 
 == Resources ==

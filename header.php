@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Divine_Spa_Lite
+ * @package Divine_Spa
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -25,12 +25,12 @@ wp_head(); ?>
 	      <div class="row">
 	        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
 	          <div class="logo-area"> 
-	          	<?php divine_spa_lite_logo(); ?> 
+	          	<?php divine_spa_logo(); ?> 
 	          </div>
 	        </div> 
 	        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
 	          <div class="main-menu">
-	            <?php divine_spa_lite_main_menu(); ?>
+	            <?php divine_spa_main_menu(); ?>
 	          </div>
 	        </div>  
 	      </div>
@@ -42,7 +42,7 @@ wp_head(); ?>
 	        <div class="col-md-12">
 	          <div class="mobile-menu">
 	            <nav id="dropdown">
-	             	<?php divine_spa_lite_main_menu(); ?>
+	             	<?php divine_spa_main_menu(); ?>
 	            </nav>
 	          </div>
 	        </div>
@@ -55,21 +55,21 @@ wp_head(); ?>
     <?php 
 
     if(is_page()){ 
-    	$divine_spa_lite_hdr_img_id = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full',true); 
+    	$divine_spa_hdr_img_id = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()),'full',true); 
     	if(has_post_thumbnail()){
-    		$divine_spa_lite_hdr_img = 1;
+    		$divine_spa_hdr_img = 1;
     	}else{
-    		$divine_spa_lite_hdr_img = 0;	
+    		$divine_spa_hdr_img = 0;	
     	}
     }else{
     	if(get_header_image()){
-    		$divine_spa_lite_hdr_img = 1;
+    		$divine_spa_hdr_img = 1;
     	}else{
-    		$divine_spa_lite_hdr_img = 0;	
+    		$divine_spa_hdr_img = 0;	
     	}
     		
     }
-    if($divine_spa_lite_hdr_img==1){ 
+    if($divine_spa_hdr_img==1){ 
     	get_template_part('banner'); 
 	} ?>  
  

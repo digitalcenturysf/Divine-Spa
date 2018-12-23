@@ -1,5 +1,5 @@
 /*
-Theme Name: Divine Spa Lite
+Theme Name: Divine Spa
 Theme URI: http://digitalcenturysf.com/themes/viktor/wordpress
 Author: DigitalCenturySF
 Author URI: http://digitalcenturysf.com
@@ -7,7 +7,7 @@ Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: divine-spa-lite
+Text Domain: divine-spa
 Tags:  two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -1453,12 +1453,12 @@ ol.comment-list .comment-respond.blog-comment-bx a#cancel-comment-reply-link {
 }
 .error-content-area .error-bx1 {
 	background: #d00009 none repeat scroll 0 0;
-	padding: 70px 0px;
+	padding: 30px 0px 50px;
 	text-align: center;
 }
 .error-content-area .error-bx1 h1 {
-	font-size: 300px;
-	font-weight: 900;
+	font-size: 250px;
+	font-weight: 700;
 	color: #fff;
 	margin-bottom: 0px;
 }

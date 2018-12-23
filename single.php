@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Divine_Spa_Lite
+ * @package Divine_Spa
  */ 
 get_header(); ?>
 	<div id="primary" class="content-area">
