@@ -15,7 +15,7 @@ function divine_spa_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';  
  
 	$wp_customize->add_section( 'v_copyright' , array(
-	    'title'      => __( 'Footer Settings', 'cassandra-lite' ),
+	    'title'      => __( 'Footer Settings', 'divine-spa' ),
 	    'priority'   => 90,
 	) );
 	$wp_customize->add_setting( 'v_copyright_text' , array(
@@ -24,7 +24,7 @@ function divine_spa_customize_register( $wp_customize ) {
 	    'sanitize_callback' => 'sanitize_text_field',
 	) ); 
 	$wp_customize->add_control( 'v_copyright_text', array(
-	    'label' => __( 'Copyright Text', 'cassandra-lite' ),
+	    'label' => __( 'Copyright Text', 'divine-spa' ),
 		'section'	=> 'v_copyright',
 		'setting'	=> 'v_copyright_text',
 		'type'	 => 'text',

@@ -3,12 +3,12 @@ Theme Name: Divine Spa
 Theme URI: http://digitalcenturysf.com/themes/viktor/wordpress
 Author: DigitalCenturySF
 Author URI: http://digitalcenturysf.com
-Description: Description
+Description: Are you looking for a professionally designed layout for your cosmetic or beauty business? Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop, etc. This WordPress theme comes with many great features such as WooCommerce, so you can setup your eCommerce store, and Visual Composer so you can create an unlimited number of beautiful pages. In addition to that, there are multiple gorgeous home pages, and over a dozen of inner pages for your commerce business. For more information, visit our website https://digitalcenturysf.com/
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: divine-spa
-Tags:  two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Tags: news, blog, ecommerce two-columns, three-columns, left-sidebar, right-sidebar,  custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, sticky-post,  translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -17,20 +17,13 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
- 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-html {
-	box-sizing: border-box;
-}
-*,
-*:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
-}
-body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+
+html, body {
+	font-family: 'open sans', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	vertical-align: baseline;
+	color: #646464;
 }
 blockquote:before,
 blockquote:after,
@@ -90,10 +83,7 @@ table tbody tr a{
 table tbody tr a:hover{
 	color: #d00009;
 	text-decoration: underline;
-}
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
+} 
  
 /*--------------------------------------------------------------
 ## Menus
@@ -538,20 +528,11 @@ object {
 .gallery-caption {
 	display: block;
 }
- 
-/*----------------------------------------
-1. Theme Default CSS (body, link color, section etc)
-----------------------------------------*/
+  
 /* ------------------------------------
     1.1 Theme Basic styling 
     ---------------------------------------*/
-html, body {
-	font-family: 'open sans', sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	vertical-align: baseline;
-	color: #646464;
-}
+
 .floatleft {
 	float: left;
 }
@@ -685,7 +666,7 @@ ul {
 }
 .main-header-area .main-menu ul li {
 	display: inline-block;
-	padding: 36px 25px;
+	padding: 36px 18px;
 	position: relative;
 	transition: all 0.5s ease 0s;
 	position: relative
@@ -723,7 +704,7 @@ ul {
 	opacity: 0;
 }
 .main-header-area .main-menu ul li:hover a {
-	color: #ffffff;
+	color: #bfbfbf;
 }
 .main-menu .dropdown .dropdown-menu {
 	background: #ffffff;
@@ -761,14 +742,14 @@ ul {
 	opacity: 0;
 	visibility: hidden;
 	width: 200px;
-	z-index: 9;
+	z-index: 99999;
 	left: 0;
 }
 .main-header-area .main-menu ul li ul li {
 	display: block;
 	text-align: left;
 	padding: 0;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #999999;
 	transition: all 0.5s ease 0s;
 } 
 .main-header-area .main-menu ul li ul li a {
@@ -777,7 +758,7 @@ ul {
 .main-header-area .main-menu ul li .sub-menu li .sub-menu{
 	position: absolute;
     left: 200px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #999999;
     top: 44px;
     text-replace: .4s;
     opacity: 0;
@@ -800,7 +781,7 @@ ul {
 .main-header-area .main-menu ul li a {
 	display: block;
 	text-decoration: none;
-	color: #fff;
+	color: #bfbfbf;
 	transition: all 0.5s ease 0s;
 	text-transform: uppercase;
 	font-family: raleway;
@@ -830,7 +811,9 @@ ul {
     background-size: cover;
     background-position: center center;
 }
-/* Simple LightBox Arrow */
+/**
+ * Latest Blog
+ */
 button.sl-prev .fa, button.sl-next .fa {
 	font-size: 35px !important;
 	font-weight: bold;
@@ -891,157 +874,10 @@ button.sl-prev .fa, button.sl-next .fa {
 	color: #d00009;
 	margin-right: 10px;
 } 
-/* ------------------------------------
-13. footer area start here 
-----------------------------------------*/
-footer {
-	background: url(img/footer-bg3.png) no-repeat;
-	background-position: center !important;
-	background-size: cover !important;
-}
-.footer-spa {
-	background: url(img/footer-bg33.jpg) no-repeat;
-	background-position: center top -50px;
-	background-size: cover;
-}
-footer .footer-top-area {
-	padding: 60px 0 60px !important;
-}
-footer .footer-top-area .footer-top p {
-	color: #ffffff;
-	letter-spacing: 25px;
-	font-size: 18px;
-}
-footer .footer-top-area .footer-top h2 {
-	font-size: 48px;
-	color: #01b1d7;
-}
-footer .footer-top-area .footer-top h2 i {
-	color: #646464;
-}
-footer .footer-top-area .main-footer {
-	margin-top: 30px;
-}
-footer .footer-top-area .main-footer .single-footer h3 {
-	color: #ffffff;
-	font-family: raleway;
-	font-size: 20px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	margin-bottom: 30px;
-	text-transform: uppercase;
-}
-footer .footer-top-area .main-footer .single-footer h3::after {
-	background: #d00009;
-	border-radius: 3px;
-	content: "";
-	display: block;
-	height: 3px;
-	margin-top: 18px;
-	width: 62px;
-}
-footer .footer-top-area .main-footer .single-footer a {
-	display: block;
-	margin-bottom: 0px;
-}
-footer .footer-top-area .main-footer .single-footer p {
-	color: #c3c3c3;
-	margin-bottom: 40px;
-}
-footer .footer-top-area .main-footer .single-footer .footer-social-media-area ul {
-	text-align: left;
-}
-footer .footer-top-area .main-footer .single-footer .footer-social-media-area ul li {
-	display: inline-block;
-	margin: 2px;
-}
-footer .footer-top-area .main-footer .single-footer .footer-social-media-area ul li a {
-	display: block;
-	width: 30px;
-	height: 30px;
-	line-height: 28px;
-	color: #b5b5b5;
-	border: 1px solid #c3c3c3;
-	transition: all 0.5s ease 0s;
-	text-decoration: none;
-	text-align: center;
-}
-footer .footer-top-area .main-footer .single-footer .footer-social-media-area ul li a:hover {
-	color: #d00009;
-}
-footer .footer-top-area .main-footer .single-footer .footer-social-media-area ul li a:hover i {
-	color: #d00009;
-}
-footer .footer-top-area .main-footer .footer-two ul li {
-	display: block;
-	color: #b3b3b3;
-	margin: 0 0 15px 0;
-	font-weight: 300;
-	font-weight: 600
-}
-footer .footer-top-area .main-footer .footer-two ul li i {
-	margin: 0 15px 0 0px;
-	color: #01b1d7;
-}
-footer .footer-top-area .main-footer .footer-two span {
-	display: inline-block;
-	float: right;
-	width: 100px;
-}
-footer .footer-top-area .main-footer .footer-three ul li {
-	display: block;
-	color: #b3b3b3;
-	margin: 0 0 15px 0;
-	font-weight: 600;
-}
-footer .footer-top-area .main-footer .footer-three ul li i {
-	color: #d00009;
-	margin: 0 15px 0 0;
-	text-align: center;
-	width: 16px;
-}
-footer .footer-top-area .main-footer .footer-four ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-footer .footer-top-area .main-footer .footer-four ul li {
-	display: inline-block;
-	width: 30%;
-	margin: 1px 3px;
-}
-footer .footer-top-area .main-footer .footer-four ul li a {
-	display: block;
-}
-footer .footer-top-area .main-footer .footer-four ul li a img {
-	display: block;
-	width: 100%;
-}
-footer .footer-top-area .main-footer .footer-four ul li a img:hover {
-	opacity: .9;
-}
-footer .footer-three .fa.fa-map-marker {
-	float: left;
-	margin-top: 4px !important;
-}
-footer .footer-three span {
-	display: inline-block;
-	float: left;
-	margin-bottom: 10px;
-	width: 85%;
-}
-footer .footer-bottom-area {
-	background: #000;
-	padding: 30px 0;
-}
-footer .footer-bottom-area p {
-	margin: 0;
-	padding: 0;
-	color: #ddd;
-}
-/*homepage_1 End*/
       
-/*shop page css start here*/
+/*-------------------------------
+	Sidebar
+--------------------------------*/
 .spacer-area {
 	margin: 100px 0px;
 } 
@@ -1204,9 +1040,10 @@ footer .footer-bottom-area p {
 .shop-product .pagination-area {
 	margin-bottom: 0px;
 }
-/*shop page css end here*/
 
-/*.........blog page css start here...........*/
+/*-------------------------------
+	Blog
+--------------------------------*/
 .blog-area-content .latest-blog-area .blog-box > section {
 	display: inline-block;
 	margin: 1.25%;
@@ -1238,9 +1075,7 @@ footer .footer-bottom-area p {
 }
 .blog-area-content .pagination-area ul {
 	margin-bottom: 0px
-}
-/*.....blog page css end........*/
-/*.....blog detail page css start........*/
+} 
 .blog-single-area .blog-des-bx {
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
@@ -1394,6 +1229,10 @@ footer .footer-bottom-area p {
 	text-transform: uppercase;
 	height: inherit;
 }
+
+/*-------------------------------
+	comments
+--------------------------------*/
 ol.comment-list .depth-1 .comment-respond.blog-comment-bx .row .col-lg-6.col-md-6:nth-child(1),
 ol.comment-list > .comment-respond.blog-comment-bx .row .col-lg-6.col-md-6:nth-child(1){
 	padding-left: 0;
@@ -1445,9 +1284,10 @@ ol.comment-list .comment-respond.blog-comment-bx a#cancel-comment-reply-link {
     float: right;
     padding-top: 8px;
 }
-/*.....blog detail page css end........*/
 
-/*.....error page css start........*/
+/*-------------------------------
+	404 page
+--------------------------------*/
 .error-content-area {
 	text-align: center;
 }
@@ -1489,9 +1329,7 @@ ol.comment-list .comment-respond.blog-comment-bx a#cancel-comment-reply-link {
 }
 .error-content-area figure p a:hover {
 	background: #d00009
-}
-/*.....error page css end........*/
-
+} 
 .cmn-btn1 {
 	text-transform: uppercase;
 	color: #fff;
@@ -1580,6 +1418,155 @@ ol.comment-list .comment-respond.blog-comment-bx a#cancel-comment-reply-link {
 #custom-search-input .btn{
 	padding: 10px 25px;
 }
+
+/* ------------------------------------
+  footer area start here 
+----------------------------------------*/
+footer {
+	background: url(img/footer-bg3.png) no-repeat;
+	background-position: center !important;
+	background-size: cover !important;
+}
+.footer-spa {
+	background: url(img/footer-bg33.jpg) no-repeat;
+	background-position: center top -50px;
+	background-size: cover;
+}
+.footer-top-area {
+	padding: 60px 0 60px !important;
+}
+.footer-top-area .footer-top p {
+	color: #ffffff;
+	letter-spacing: 25px;
+	font-size: 18px;
+}
+.footer-top-area .footer-top h2 {
+	font-size: 48px;
+	color: #01b1d7;
+}
+.footer-top-area .footer-top h2 i {
+	color: #646464;
+}
+.footer-top-area .main-footer {
+	margin-top: 30px;
+}
+.footer-top-area .main-footer .single-footer h3 {
+	color: #ffffff;
+	font-family: raleway;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.footer-top-area .main-footer .single-footer h3::after {
+	background: #d00009;
+	border-radius: 3px;
+	content: "";
+	display: block;
+	height: 3px;
+	margin-top: 18px;
+	width: 62px;
+}
+.footer-top-area .main-footer .single-footer a {
+	display: block;
+	margin-bottom: 0px;
+}
+.footer-top-area .main-footer .single-footer p {
+	color: #c3c3c3;
+	margin-bottom: 40px;
+}
+.footer-top-area .main-footer .single-footer .footer-social-media-area ul {
+	text-align: left;
+}
+.footer-top-area .main-footer .single-footer .footer-social-media-area ul li {
+	display: inline-block;
+	margin: 2px;
+}
+.footer-top-area .main-footer .single-footer .footer-social-media-area ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 28px;
+	color: #b5b5b5;
+	border: 1px solid #c3c3c3;
+	transition: all 0.5s ease 0s;
+	text-decoration: none;
+	text-align: center;
+}
+.footer-top-area .main-footer .single-footer .footer-social-media-area ul li a:hover {
+	color: #d00009;
+}
+.footer-top-area .main-footer .single-footer .footer-social-media-area ul li a:hover i {
+	color: #d00009;
+}
+.footer-top-area .main-footer .footer-two ul li {
+	display: block;
+	color: #b3b3b3;
+	margin: 0 0 15px 0;
+	font-weight: 300;
+	font-weight: 600
+}
+.footer-top-area .main-footer .footer-two ul li i {
+	margin: 0 15px 0 0px;
+	color: #01b1d7;
+}
+.footer-top-area .main-footer .footer-two span {
+	display: inline-block;
+	float: right;
+	width: 100px;
+}
+.footer-top-area .main-.footer-three ul li {
+	display: block;
+	color: #b3b3b3;
+	margin: 0 0 15px 0;
+	font-weight: 600;
+}
+.footer-top-area .main-.footer-three ul li i {
+	color: #d00009;
+	margin: 0 15px 0 0;
+	text-align: center;
+	width: 16px;
+}
+.footer-top-area .main-footer .footer-four ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footer-top-area .main-footer .footer-four ul li {
+	display: inline-block;
+	width: 30%;
+	margin: 1px 3px;
+}
+.footer-top-area .main-footer .footer-four ul li a {
+	display: block;
+}
+.footer-top-area .main-footer .footer-four ul li a img {
+	display: block;
+	width: 100%;
+}
+.footer-top-area .main-footer .footer-four ul li a img:hover {
+	opacity: .9;
+}
+.footer-three .fa.fa-map-marker {
+	float: left;
+	margin-top: 4px !important;
+}
+.footer-three span {
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+	width: 85%;
+}
+.footer-bottom-area {
+	background: #000;
+	padding: 30px 0;
+}
+.footer-bottom-area p {
+	margin: 0;
+	padding: 0;
+	color: #ddd;
+} 
 a.scrollToTop {
     border: 1px solid #d00009;
     padding: 7px 14px;
