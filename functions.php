@@ -145,8 +145,8 @@ function divine_spa_scripts() {
 	wp_enqueue_style( 'divine-spa-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'divine-spa-responsive', DIVINE_SPA_LITE_CSS . 'responsive.css' ); 
 
-	wp_enqueue_script( 'modernizr', DIVINE_SPA_LITE_JS . 'vendor/modernizr-2.8.3.min.js', array('jQuery'), '2.8.3', false ); 
-	wp_enqueue_script( 'bootstrap', DIVINE_SPA_LITE_JS . 'bootstrap.min.js', array('jquery','jquery-masonry'), '3.3.5', true );
+	wp_enqueue_script( 'modernizr', DIVINE_SPA_LITE_JS . 'modernizr.js', array('jQuery'), '2.8.3', false ); 
+	wp_enqueue_script( 'bootstrap', DIVINE_SPA_LITE_JS . 'bootstrap.js', array('jquery','jquery-masonry'), '3.3.5', true );
 	wp_enqueue_script( 'meanmenu', DIVINE_SPA_LITE_JS . 'jquery.meanmenu.js', array(), '2.0.8', true );  
 	wp_enqueue_script( 'divine-spa-main', DIVINE_SPA_LITE_JS . 'main.js', array(), '1.0', true );
 	wp_enqueue_script( 'divine-spa-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -183,8 +183,7 @@ function divine_spa_scripts() {
 			}
         ";
     }  
-
-    $divine_spa_custom_css .= "{$divine_spa_adv_css}";
+ 
     wp_add_inline_style( 'divine-spa-style', $divine_spa_custom_css );
  
 
@@ -292,7 +291,9 @@ function divine_spa_comments($comment, $args, $depth) { ?>
         <div class="cbox">
           <h4><?php comment_author_link() ?></h4>
           <span><?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?></span>
-          <h6><?php printf( __( '%1$s @ %2$s','divine-spa' ), get_comment_date( '', $comment ), get_comment_time() ); ?></h6>
+          <h6><?php 
+          	/* translators: comment date and time */
+          	printf( esc_html__( '%1$s @ %2$s','divine-spa' ), get_comment_date( '', $comment ), get_comment_time() ); ?></h6>
 			<?php if ($comment->comment_approved == '0') : ?>
 				<p><em><?php esc_html_e('Your comment is awaiting moderation.','divine-spa'); ?></em></p>
 			<?php endif; ?>
@@ -430,23 +431,4 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/divine-framework-options.php'; 
- 
-// woocommerce min cart
-function divine_spa_woocommere_min_cart(){
-	global $woocommerce;
-?> 
- <span class="acart"> <a href="<?php echo esc_url(home_url('/').'cart/'); ?>"> <i class="fa fa-shopping-cart fa-lg"></i><b><?php if ( class_exists( 'WooCommerce' ) ) { echo $woocommerce->cart->cart_contents_count; }else{ echo '0'; } ?></b></a> </span>
-<?php 
-}
-
-// product item count with ajax
-add_filter( 'woocommerce_add_to_cart_fragments', 'divine_spa_woocommerce_header_add_to_cart_fragment' );
-function divine_spa_woocommerce_header_add_to_cart_fragment( $fragments ) {
-		global $woocommerce;
-	ob_start();
-	?>
- <span class="acart"> <a href="<?php echo esc_url(home_url('/').'cart/'); ?>"> <i class="fa fa-shopping-cart fa-lg"></i><b><?php if ( class_exists( 'WooCommerce' ) ) { echo $woocommerce->cart->cart_contents_count; }else{ echo '0'; } ?></b></a> </span>
-	<?php
-	$fragments['span.acart'] = ob_get_clean();
-	return $fragments;
-}
+  

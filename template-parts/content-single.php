@@ -12,7 +12,7 @@
 <?php endif; ?>
 <div class="blog-des-bx">
   <h2><?php the_title(); ?></h2>
-  <h5 class="btm"><i class="fa fa-calendar"></i><?php echo get_the_time('d F, Y'); ?>  &nbsp; I &nbsp;  by <span><?php the_author(); ?></span></h5>
+  <h5 class="btm"><i class="fa fa-calendar"></i><?php the_time('d F, Y'); ?>  &nbsp; | &nbsp;  <?php esc_html_e('by','divine-spa'); ?> <span><?php the_author(); ?></span></h5>
   <?php the_content(); 
 	wp_link_pages( array(
 		'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'divine-spa' ),

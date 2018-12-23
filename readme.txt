@@ -41,4 +41,5 @@ The Divine Spa WordPress theme is 100% GPLv2. See headers of files for further d
 * Font Awesome © 2018 Dave Gandy, STL, http://fontawesome.io/
 * Bootstrap © 2011-2016 Twitter, MIT, http://getbootstrap.com  
 * jQuery meanMenu © 2012-2014 Chris Wharton - MeanThemes, GPL, https://github.com/meanthemes/meanMenu
+* Modernizr © 2018 Faruk Ateş, MIT , http://modernizr.com/
  

@@ -12,11 +12,11 @@
   	if(has_post_thumbnail()){ the_post_thumbnail('divine-spa-blog-post'); $divine_spa_post_cls = ""; } ?>
     <div class="blog-description <?php echo esc_attr($divine_spa_post_cls); ?>"> 
     	<a href="<?php the_permalink(); ?>">
-        	<p><i class="fa fa-calendar"></i><?php echo get_the_time('d F, Y'); ?>   I   <?php esc_html_e('by','divine-spa'); ?>  <?php the_author(); ?></p>
+        	<p><i class="fa fa-calendar"></i><?php the_time('d F, Y'); ?> | <?php esc_html_e('by','divine-spa'); ?>  <?php the_author(); ?></p>
         	<h2><?php the_title(); ?></h2>
         </a> 
         <?php if(!has_post_thumbnail()): ?>
-	        <p class="short-content"><?php echo wp_trim_words(get_the_content(),13,'...') ?></p>
+	        <p class="short-content"><?php echo wp_kses_post(wp_trim_words(get_the_content(),13,'...')); ?></p>
 	    <?php endif; ?>
     </div>
     <a href="<?php the_permalink(); ?>"><span></span></a> 
