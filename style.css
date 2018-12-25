@@ -1,6 +1,6 @@
 /*
 Theme Name: Divine Spa
-Theme URI: http://digitalcenturysf.com/themes/divine/spa
+Theme URI: https://digitalcenturysf.com/templates/divine-spa-theme/
 Author: DigitalCenturySF
 Author URI: http://digitalcenturysf.com
 Description: Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop, etc. This WordPress theme comes with many great features such as WooCommerce, so you can setup your eCommerce store, and Visual Composer so you can create an unlimited number of beautiful pages. In addition to that, there are multiple gorgeous home pages, and over a dozen of inner pages for your commerce business. For more information, visit our website https://digitalcenturysf.com/
@@ -11,7 +11,8 @@ Text Domain: divine-spa
 Tags: news, blog, e-commerce, two-columns, three-columns, left-sidebar, right-sidebar,  custom-header, custom-menu, editor-style, featured-images, flexible-header,  full-width-template, sticky-post,  translation-ready
 */
 
-html, body {
+html, 
+body {
 	font-family: 'open sans', sans-serif;
 	font-size: 14px;
 	line-height: 24px;
@@ -263,8 +264,7 @@ a.meanmenu-reveal{display:none}
 }
 /*--------------------------------------------------------------
 # Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers. */
+--------------------------------------------------------------*/ 
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -431,13 +431,11 @@ ol.comment-list .depth-3 .comment-respond.blog-comment-bx{
 }
 /*--------------------------------------------------------------
 # Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
-.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+--------------------------------------------------------------*/ 
+.infinite-scroll .posts-navigation,  
+.infinite-scroll.neverending .site-footer { 
 	display: none;
-}
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+} 
 .infinity-end.neverending .site-footer {
 	display: block;
 }
@@ -451,8 +449,7 @@ ol.comment-list .depth-3 .comment-respond.blog-comment-bx{
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
-}
-/* Make sure embeds and iframes fit their containers. */
+} 
 embed,
 iframe,
 object {
@@ -599,8 +596,7 @@ ul {
 .padding-top1 {
 	padding-top: 60px;
 }
-.site-section-area {
-	/*padding: 0 150px;*/
+.site-section-area { 
 	text-align: center
 }
 .site-section-area h2 {
@@ -1078,6 +1074,16 @@ button.sl-prev .fa, button.sl-next .fa {
 	color: #646464;
 	position: relative;
 	margin-bottom: 50px;
+}
+.pagination>li>a, .pagination>li>span{
+	color: #d00009;
+}
+ 
+.pagination>li>a:hover, .pagination>li>span:hover,
+.pagination>li>a.active{
+    background-color: #ddd;
+    border-color: #ddd;
+	color: #d00009;
 }
 .blog-single-area .blog-des-bx > h5.btm:after {
 	background: #d00009 none repeat scroll 0 0;

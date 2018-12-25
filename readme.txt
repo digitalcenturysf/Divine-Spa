@@ -24,7 +24,7 @@ View more themes from this author: https://digitalcenturysf.com
 
 
 == Theme License ==
-The Divine Spa WordPress theme is 100% GPLv2. See headers of files for further details.GNU GPL v2.0 or later
+The Divine Spa WordPress theme is 100% GPLv2. See headers of files for further details. GNU GPL v2.0 or later
 
 
 == Resources ==

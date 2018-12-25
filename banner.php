@@ -1,3 +1,12 @@
+<?php
+/**
+ * The template for displaying the banner.
+ *  
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Divine_Spa
+ */ 
+?>
 
 <!-- inner-banner-area start here-->
 <div class="about-banner-area">
