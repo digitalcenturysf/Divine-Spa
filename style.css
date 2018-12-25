@@ -1219,7 +1219,7 @@ a.button.wc-forward,
 .woocommerce button.button.alt, .woocommerce input.button.alt
 .woocommerce button.button:hover, .woocommerce input.button:hover
 .woocommerce div.product form.cart .button,
-.woocommerce ul.products li.product .add_to_cart_button,
+.woocommerce ul.products li.product .button,
 .blog-single-area .blog-comment-bx input#submit {
 	background: #000 none repeat scroll 0 0;
 	border: medium none;
@@ -1230,6 +1230,7 @@ a.button.wc-forward,
 	padding: 10px 40px; 
 	height: inherit;
 }
+.woocommerce ul.products li.product .button,
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
 .woocommerce button.button.alt, .woocommerce input.button.alt{
 	padding: 18px 40px !important;
@@ -1643,4 +1644,11 @@ a.scrollToTop {
 } 
 section.related.products {
     margin-top: 60px;
+}
+.woocommerce .woocommerce-ordering select { 
+    height: 40px;
+    margin-top: -10px;
+}
+.woocommerce .woocommerce-ordering {
+    margin: 0 0 3em;
 }
