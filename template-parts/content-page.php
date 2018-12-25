@@ -7,13 +7,10 @@
  * @package Divine_Spa
  */
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<h2 class="entry-titles"><?php esc_html_e('This is title','divine-spa') ?></h2>
-	<?php if((get_post_meta(get_the_ID(),'_divine_spa_header_style',true)!='sldr') && (get_post_meta(get_the_ID(),'_divine_spa_header_style',true)!='bnr') && (get_post_meta(get_the_ID(),'_divine_spa_header_style',true)!='revsldr')): ?>
-		<header class="entry-header">
-			<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-		</header><!-- .entry-header -->
-	<?php endif; ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>  
+	<header class="entry-header">
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php
 			the_content();

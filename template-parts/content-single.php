@@ -21,22 +21,22 @@
  
 global $numpages;
 if ( is_singular() && $numpages > 1 ) {
-      if ( is_singular( 'attachment' ) ) {
-        // Parent post navigation.
-        the_post_navigation( array(
-          'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'divine-spa' ),
-        ) );
-      } elseif ( is_singular( 'post' ) ) {
-        // Previous/next post navigation.
-        the_post_navigation( array(
-          'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'divine-spa' ) . '</span> ' .
-            '<span class="screen-reader-text">' . esc_html__( 'Next post:', 'divine-spa' ) . '</span> ' .
-            '<span class="post-title">%title</span>',
-          'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'divine-spa' ) . '</span> ' .
-            '<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'divine-spa' ) . '</span> ' .
-            '<span class="post-title">%title</span>',
-        ) );
-      }
+  if ( is_singular( 'attachment' ) ) {
+    // Parent post navigation.
+    the_post_navigation( array(
+      'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'divine-spa' ),
+    ) );
+  } elseif ( is_singular( 'post' ) ) {
+    // Previous/next post navigation.
+    the_post_navigation( array(
+      'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next', 'divine-spa' ) . '</span> ' .
+        '<span class="screen-reader-text">' . esc_html__( 'Next post:', 'divine-spa' ) . '</span> ' .
+        '<span class="post-title">%title</span>',
+      'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous', 'divine-spa' ) . '</span> ' .
+        '<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'divine-spa' ) . '</span> ' .
+        '<span class="post-title">%title</span>',
+    ) );
+  }
 }
  ?>
 </div>
@@ -52,7 +52,7 @@ $divine_spa_author = get_the_author_meta('description');
 if($divine_spa_author):
 ?>
   <div class="blog-author-bx">
-    <h3>About Post Author</h3>
+    <h3><?php esc_html_e('About Post Author','divine-spa'); ?></h3>
     <section class="clearfix author">
       <figure><?php echo get_avatar( get_the_author_meta( 'ID' ), 130 ); ?></figure>
       <div>

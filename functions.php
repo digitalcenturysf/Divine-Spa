@@ -6,26 +6,15 @@
  *
  * @package Divine_Spa
  */
-define("DIVINE_SPA_LITE_CSS", get_template_directory_uri() . "/css/" );
-define("DIVINE_SPA_LITE_INC", get_template_directory_uri() . "/inc/" );
-define("DIVINE_SPA_LITE_DURI", get_template_directory_uri() ."/" );
-define("DIVINE_SPA_LITE_JS", get_template_directory_uri() . "/js/" );
+define("DIVINE_SPA_CSS", get_template_directory_uri() . "/css/" );
+define("DIVINE_SPA_INC", get_template_directory_uri() . "/inc/" );
+define("DIVINE_SPA_DURI", get_template_directory_uri() ."/" );
+define("DIVINE_SPA_JS", get_template_directory_uri() . "/js/" );
 
 if ( ! function_exists( 'divine_spa_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
+
 function divine_spa_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on DCSF Divine, use a find and replace
-	 * to change 'divine-spa' to the name of your theme in all the template files.
-	 */
+	
 	load_theme_textdomain( 'divine-spa', get_template_directory() . '/languages' );
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' ); 
@@ -36,6 +25,12 @@ function divine_spa_setup() {
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
+
+	/**
+	 * WooCommerce support
+	 */ 
+	add_theme_support( 'woocommerce' );
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
@@ -61,7 +56,7 @@ function divine_spa_setup() {
 		'caption',
 	) );
 
-	/*
+	/**
 	 * Custom Logo
 	 */ 
   	add_theme_support( 'custom-logo', array(
@@ -71,6 +66,9 @@ function divine_spa_setup() {
        'flex-height' => true,'header-text' => array( 'logo-area' ),
 	) );
 
+	/**
+	 * Custom Header
+	 */ 
 	add_theme_support( 'custom-header', array(
 		'flex-width'    => true, 
 		'flex-height'    => true, 
@@ -97,7 +95,7 @@ function divine_spa_fonts_url() {
 	$open_sans = _x( 'on', 'Open Sans font: on or off', 'divine-spa' );
 	$dancing = _x( 'on', 'Dancing Script font: on or off', 'divine-spa' );
 	 
-	if ( 'off' !== $open_sans || 'off' !== $raleway ) {
+	if ( 'off' !== $open_sans || 'off' !== $raleway || 'off' !== $dancing ) {
 		$font_families = array();
  
 		if ( 'off' !== $raleway ) {
@@ -140,15 +138,15 @@ function divine_spa_scripts() {
  	// LOAD FONTS
 	 wp_enqueue_style( 'divine-spa-fonts', divine_spa_fonts_url(), array(), '1.0.0' );
 
-	wp_enqueue_style( 'bootstrap', DIVINE_SPA_LITE_CSS . 'bootstrap.min.css' ); 
-	wp_enqueue_style( 'font-awesome', DIVINE_SPA_LITE_CSS . 'font-awesome.min.css' ); 
+	wp_enqueue_style( 'bootstrap', DIVINE_SPA_CSS . 'bootstrap.min.css' ); 
+	wp_enqueue_style( 'font-awesome', DIVINE_SPA_CSS . 'font-awesome.min.css' ); 
 	wp_enqueue_style( 'divine-spa-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'divine-spa-responsive', DIVINE_SPA_LITE_CSS . 'responsive.css' ); 
+	wp_enqueue_style( 'divine-spa-responsive', DIVINE_SPA_CSS . 'responsive.css' ); 
 
-	wp_enqueue_script( 'modernizr', DIVINE_SPA_LITE_JS . 'modernizr.js', array('jQuery'), '2.8.3', false ); 
-	wp_enqueue_script( 'bootstrap', DIVINE_SPA_LITE_JS . 'bootstrap.js', array('jquery','jquery-masonry'), '3.3.5', true );
-	wp_enqueue_script( 'meanmenu', DIVINE_SPA_LITE_JS . 'jquery.meanmenu.js', array(), '2.0.8', true );  
-	wp_enqueue_script( 'divine-spa-main', DIVINE_SPA_LITE_JS . 'main.js', array(), '1.0', true );
+	wp_enqueue_script( 'modernizr', DIVINE_SPA_JS . 'modernizr.js', array('jQuery'), '2.8.3', false ); 
+	wp_enqueue_script( 'bootstrap', DIVINE_SPA_JS . 'bootstrap.js', array('jquery','jquery-masonry'), '3.3.5', true );
+	wp_enqueue_script( 'meanmenu', DIVINE_SPA_JS . 'jquery.meanmenu.js', array(), '2.0.8', true );  
+	wp_enqueue_script( 'divine-spa-main', DIVINE_SPA_JS . 'main.js', array(), '1.0', true );
 	wp_enqueue_script( 'divine-spa-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'divine-spa-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -216,25 +214,7 @@ if(is_user_logged_in()):
 		<?php
 	}
 endif;
-/**
- * DCSF Divine header search form
- */ 
-function divine_spa_header_search(){
-?>
-    <form action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <div id="custom-search-input">
-            <div class="input-group">
-                <input type="text" class="search-query form-control" value="<?php echo get_search_query(); ?>" name="s"  placeholder="Search ..." />
-                <span class="input-group-btn">
-                    <button class="btn btn-danger" type="submit">
-                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
-                    </button>
-                </span>
-            </div>
-        </div>
-    </form>
-<?php
-}
+
 /**
  * Divine Spa Pagination.
  */
@@ -322,7 +302,9 @@ add_action( 'comment_form_after_fields', 'divine_spa_add_textarea' );
 add_action( 'comment_form_logged_in_after', 'divine_spa_add_textarea' );
 function divine_spa_add_textarea()
 {
-    echo '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="Your Comment*" cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>';
+	if(class_exists('WooCommerce') && !is_product()){
+    	echo '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="'.esc_attr('Your Comment*','divine-spa').'" cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>';
+	}
 }
 /**
  * remove comment fields
@@ -332,9 +314,9 @@ function divine_spa_remove_comment_fields($fields) {
 	$req = get_option( 'require_name_email' );
 	$aria_req = ( $req ? " aria-required='true'" : '' );
     unset($fields['url']);
-    $fields['author'] = '<p class="comment-form-author"> <input id="author" placeholder="Name*" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+    $fields['author'] = '<p class="comment-form-author"> <input id="author" placeholder="'.esc_attr('Name*','divine-spa').'" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
     '" size="30"' . $aria_req . ' /></p>';
-    $fields['email'] = '<p class="comment-form-email"><input id="email" placeholder="Email*" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+    $fields['email'] = '<p class="comment-form-email"><input id="email" placeholder="'.esc_attr('Email*','divine-spa').'" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
     '" size="30"' . $aria_req . ' /></p>';
     return $fields;
 }
@@ -387,8 +369,8 @@ function divine_spa_breadcrumb(){
 	  echo esc_html($dcsf_divine_ptitle);
 	}elseif(is_single()){
 		the_title();
-	}elseif(is_search()){   
-		printf( '<span>%s</span>', get_search_query() ); 
+	}elseif(is_search()){    
+		echo '<span>'.get_search_query().'</span>'; 
 	}elseif(is_category() || is_tag()) {
 		single_cat_title("", true);
 	}elseif(is_archive()){ 
@@ -408,7 +390,15 @@ function divine_spa_breadcrumb(){
 	}
 }
 
-
+/**
+ * Change number or products per row to 3
+ */
+add_filter('loop_shop_columns', 'divine_spa_loop_columns');
+if (!function_exists('divine_spa_loop_columns')) {
+	function divine_spa_loop_columns() {
+		return 3;  
+	}
+}
 
 /**
  * Implement the Custom Header feature.

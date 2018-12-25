@@ -1,8 +1,8 @@
 <?php
 /**
- * DCSF_viktor Theme Customizer.
+ * Divine_Spa Theme Customizer.
  *
- * @package Viktor_lite
+ * @package Divine_Spa
  */
 
 /**
@@ -28,7 +28,7 @@ function divine_spa_customize_register( $wp_customize ) {
 		'section'	=> 'v_copyright',
 		'setting'	=> 'v_copyright_text',
 		'type'	 => 'text',
-        'description'   => 'Write copyright text here.'
+        'description'   => __( 'Write copyright text here.', 'divine-spa' )
 	) ); 
 }
 add_action( 'customize_register', 'divine_spa_customize_register' );

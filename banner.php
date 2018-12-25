@@ -1,5 +1,5 @@
 
-	<!-- inner-banner-area start here-->
+<!-- inner-banner-area start here-->
 <div class="about-banner-area">
 	<div class="container"> 
 		<div class="heading-cmn-area">

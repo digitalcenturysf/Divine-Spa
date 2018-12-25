@@ -20,7 +20,7 @@ function divine_spa_copyright_text(){
         $text2 =  get_bloginfo('name');
         $text3 =  ' |';
         $text4 = $text.$text2.$text3;
-        $text5 =  esc_html__('WordPress Templates','divine-spa');
+        $text5 =  esc_html__('WordPress Themes','divine-spa');
         printf( '<p>%s Powered by <a class="credits" href="%s">%s</a></p>', esc_html($text4), esc_url($url2), esc_html($text5) );
     }
 

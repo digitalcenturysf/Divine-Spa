@@ -33,3 +33,8 @@ function divine_spa_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'divine_spa_pingback_header' );
+
+/**
+ * Woocommerce action hooks
+ */
+remove_action( 'woocommerce_after_shop_loop', 'woocommerce_pagination', 10 );

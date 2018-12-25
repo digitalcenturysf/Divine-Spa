@@ -1,9 +1,9 @@
 /*
 Theme Name: Divine Spa
-Theme URI: http://digitalcenturysf.com/themes/viktor/wordpress
+Theme URI: http://digitalcenturysf.com/themes/divine/spa
 Author: DigitalCenturySF
 Author URI: http://digitalcenturysf.com
-Description: Are you looking for a professionally designed layout for your cosmetic or beauty business? Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop, etc. This WordPress theme comes with many great features such as WooCommerce, so you can setup your eCommerce store, and Visual Composer so you can create an unlimited number of beautiful pages. In addition to that, there are multiple gorgeous home pages, and over a dozen of inner pages for your commerce business. For more information, visit our website https://digitalcenturysf.com/
+Description: Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop, etc. This WordPress theme comes with many great features such as WooCommerce, so you can setup your eCommerce store, and Visual Composer so you can create an unlimited number of beautiful pages. In addition to that, there are multiple gorgeous home pages, and over a dozen of inner pages for your commerce business. For more information, visit our website https://digitalcenturysf.com/
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -55,11 +55,11 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto; 
+	max-width: 100%;  
 }
 figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 1em 0;  
 }
 table {
 	margin: 0 0 1.5em;
@@ -139,8 +139,7 @@ table tbody tr a:hover{
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
-}
-/* Small menu. */
+}  
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -290,9 +289,8 @@ a.meanmenu-reveal{display:none}
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
-}
-/* Do not show the outline on the skip link target. */
+	z-index: 100000;  
+} 
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
@@ -347,16 +345,12 @@ a.meanmenu-reveal{display:none}
 --------------------------------------------------------------*/
 .widget {
 	margin: 0 0 1.5em;
-}
-/* Make sure select elements fit in widgets. */
+} 
 .widget select {
     width: 100%;
     height: 40px;
     padding: 10px;
-}
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
+} 
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -804,9 +798,10 @@ ul {
     background-size: cover;
     background-position: center center;
 }
-/**
- * Latest Blog
- */
+
+/*-------------------------------
+	Latest Blog
+--------------------------------*/
 button.sl-prev .fa, button.sl-next .fa {
 	font-size: 35px !important;
 	font-weight: bold;
@@ -1211,16 +1206,31 @@ button.sl-prev .fa, button.sl-next .fa {
 	height: 200px;
 	margin: 30px 0px;
 }
+a.button.wc-forward,
+.woocommerce .cart .button, .woocommerce .cart input.button,
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, 
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
+.woocommerce button.button.alt, .woocommerce input.button.alt
+.woocommerce button.button:hover, .woocommerce input.button:hover
+.woocommerce div.product form.cart .button,
+.woocommerce ul.products li.product .add_to_cart_button,
 .blog-single-area .blog-comment-bx input#submit {
-	background: #d00009 none repeat scroll 0 0;
+	background: #000 none repeat scroll 0 0;
 	border: medium none;
 	border-radius: 0;
 	color: #fff;
 	font-size: 15px;
-	font-weight: 800;
-	padding: 15px 50px;
-	text-transform: uppercase;
+	font-weight: 500;
+	padding: 10px 40px; 
 	height: inherit;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, 
+.woocommerce button.button.alt, .woocommerce input.button.alt{
+	padding: 18px 40px !important;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
+	background: #000 none repeat scroll 0 0;
 }
 
 /*-------------------------------
@@ -1415,7 +1425,7 @@ ol.comment-list .comment-respond.blog-comment-bx a#cancel-comment-reply-link {
 /* ------------------------------------
   footer area start here 
 ----------------------------------------*/
-footer {
+/*footer {
 	background: url(img/footer-bg3.png) no-repeat;
 	background-position: center !important;
 	background-size: cover !important;
@@ -1424,7 +1434,7 @@ footer {
 	background: url(img/footer-bg33.jpg) no-repeat;
 	background-position: center top -50px;
 	background-size: cover;
-}
+}*/
 .footer-top-area {
 	padding: 60px 0 60px !important;
 }
@@ -1591,4 +1601,40 @@ a.scrollToTop {
 }
 .short-content{
 	font-weight: 400 !important;
+}
+
+/*-------------------------------------
+	WooCommerce
+-------------------------------------*/
+
+.woocommerce ul.products li.product .add_to_cart_button{
+	padding: 15px 40px; 
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title, 
+.woocommerce ul.products li.product .woocommerce-loop-product__title, 
+.woocommerce ul.products li.product h3{
+	font-weight: 700;
+}
+.woocommerce .product .onsale {
+    background: #000; 
+    width: 42px; 
+}
+.woocommerce .top {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.woocommerce .woocommerce-breadcrumb{
+	margin-bottom: 30px;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+	color: #000;
+}
+.woocommerce .quantity .qty { 
+    height: 35px;
+}
+.single-product-tab-nav .nav-tabs{
+	margin-bottom: 20px;
+} 
+section.related.products {
+    margin-top: 60px;
 }

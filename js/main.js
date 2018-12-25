@@ -42,6 +42,8 @@
       $("figure.hover", this).hide();
   });
     
+  // product tab
+  $('.single-product-tab-nav .nav-tabs li:first-child').addClass('active');
 
    // scrollUp
   $(document).ready(function(){

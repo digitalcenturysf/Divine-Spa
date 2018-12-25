@@ -2,10 +2,7 @@
 /**
  * Template Name: Page Fullwidth
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
+ * This is the template that displays the pages with fullwidhth, no sidebar
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *`

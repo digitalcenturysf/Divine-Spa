@@ -1,3 +1,11 @@
+<?php
+/**
+ * The template for displaying search form.
+ *
+ * @package Divine_Spa
+ */ 
+?>
+
 <div class="sidebar-area">
 	<div class="widget_search">
 		<form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>"> 

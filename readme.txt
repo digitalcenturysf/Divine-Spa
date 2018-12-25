@@ -8,11 +8,11 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Divine Spa is a smart and unique multi-purpose WordPress Theme for all kind of business.
+Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop etc.
 
 == Description ==
 
-Divine Spa is a smart and unique multi-purpose WordPress Theme for all kind of business. Perfectly suits for business companies, corporate agencies, startups, freelancers, organizations, personal portfolio and creative minds as well. This theme consists of well-organized components – so it’s easy to modify and customize everything. If you need support, please send us an email using the contact form on our user page. I usually respond to support requests within 24 hours so please feel free to contact me with problems of any kind or even simple questions, I don’t mind responding.
+Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop, etc. This WordPress theme comes with many great features such as WooCommerce, so you can setup your eCommerce store, and Visual Composer so you can create an unlimited number of beautiful pages. In addition to that, there are multiple gorgeous home pages, and over a dozen of inner pages for your commerce business.
 
 View more themes from this author: https://digitalcenturysf.com
 
