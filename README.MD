@@ -1,7 +1,7 @@
 # Divine Spa v1.0.0
 ![Divine Spa - Free Wordpress Theme](/screenshot.png)
 
-> Cassandra is a responsive and clean WordPress Theme. It's easily customizable and comes with many great features.
+> Divine Spa is a premium WordPress theme designed for all type of cosmetic websites such as spa, wellness and spa center, beauty’s shop etc.
 
 View more themes from this author: https://digitalcenturysf.com
 
@@ -12,11 +12,11 @@ View more themes from this author: https://digitalcenturysf.com
 
 ## Table of Themes
 
-| [<img align="left" width="80" height="80" src="/assets/images/thumb-viktor.jpg">](https://digitalcenturysf.com/templates/viktor-premium-corporate-business-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/viktor-premium-corporate-business-theme/"> 1. Viktor Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-hexo.jpg">](https://digitalcenturysf.com/templates/hexo-premium-realestate-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/hexo-premium-realestate-theme/"> 2. Hexo Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-chili.jpg">](https://digitalcenturysf.com/templates/chili-multi-purpose-restaurant-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/chili-multi-purpose-restaurant-theme/"> 3. Chili Lite - Free Wordpress Theme </a></p> |
+| [<img align="left" width="80" height="80" src="/img/thumb-viktor.jpg">](https://digitalcenturysf.com/templates/viktor-premium-corporate-business-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/viktor-premium-corporate-business-theme/"> 1. Viktor Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-hexo.jpg">](https://digitalcenturysf.com/templates/hexo-premium-realestate-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/hexo-premium-realestate-theme/"> 2. Hexo Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-chili.jpg">](https://digitalcenturysf.com/templates/chili-multi-purpose-restaurant-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/chili-multi-purpose-restaurant-theme/"> 3. Chili Lite - Free Wordpress Theme </a></p> |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | 
-| [<img align="left" width="80" height="80" src="/assets/images/thumb-cassandra.jpg">](https://digitalcenturysf.com/product/cassandra-fashion1-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/cassandra-fashion1-wordpress-theme/"> 4. Cassandra Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-hired.jpg">](https://digitalcenturysf.com/product/hired-professional-resume-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/hired-professional-resume-wordpress-theme/"> 5. Hired Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-envestpro.jpg">](https://digitalcenturysf.com/templates/envest-pro-business-multipurpose-template/) <p align="left"><a href="https://digitalcenturysf.com/templates/envest-pro-business-multipurpose-template/"> 6. EnvestPro Lite - Free Wordpress Theme </a></p> | 
-| [<img align="left" width="80" height="80" src="/assets/images/thumb-divine.jpg">](https://digitalcenturysf.com/templates/divine-spa-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/divine-spa-theme/"> 7. Divine - Spa Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-divine.jpg">](https://digitalcenturysf.com/product/divine-salon-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/divine-salon-wordpress-theme/"> 8. Divine - Salon Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-realarea.jpg">](https://digitalcenturysf.com/product/real-area-real-estate-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/real-area-real-estate-wordpress-theme/"> 9. RealArea - RealEstate Wordpress Theme </a></p> | 
-| [<img align="left" width="80" height="80" src="/assets/images/thumb-evenica.jpg">](https://digitalcenturysf.com/product/evanica-general-wedding-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/evanica-general-wedding-wordpress-theme/"> 10. Evanica - Wedding Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-cassandra.jpg">](https://digitalcenturysf.com/product/cassandra-organic-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/cassandra-organic-wordpress-theme/"> 11. Cassandra- Organic Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/assets/images/thumb-cassandra.jpg">](https://digitalcenturysf.com/product/cassandra-furniture-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/cassandra-furniture-wordpress-theme/"> 12. Cassandra - Furniture Wordpress Theme </a></p> |
+| [<img align="left" width="80" height="80" src="/img/thumb-cassandra.jpg">](https://digitalcenturysf.com/product/cassandra-fashion1-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/cassandra-fashion1-wordpress-theme/"> 4. Cassandra Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-hired.jpg">](https://digitalcenturysf.com/product/hired-professional-resume-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/hired-professional-resume-wordpress-theme/"> 5. Hired Lite - Free Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-envestpro.jpg">](https://digitalcenturysf.com/templates/envest-pro-business-multipurpose-template/) <p align="left"><a href="https://digitalcenturysf.com/templates/envest-pro-business-multipurpose-template/"> 6. EnvestPro Lite - Free Wordpress Theme </a></p> | 
+| [<img align="left" width="80" height="80" src="/img/thumb-divine.jpg">](https://digitalcenturysf.com/templates/divine-spa-theme/) <p align="left"><a href="https://digitalcenturysf.com/templates/divine-spa-theme/"> 7. Divine - Spa Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-divine.jpg">](https://digitalcenturysf.com/product/divine-salon-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/divine-salon-wordpress-theme/"> 8. Divine - Salon Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-realarea.jpg">](https://digitalcenturysf.com/product/real-area-real-estate-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/real-area-real-estate-wordpress-theme/"> 9. RealArea - RealEstate Wordpress Theme </a></p> | 
+| [<img align="left" width="80" height="80" src="/img/thumb-evenica.jpg">](https://digitalcenturysf.com/product/evanica-general-wedding-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/evanica-general-wedding-wordpress-theme/"> 10. Evanica - Wedding Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-cassandra.jpg">](https://digitalcenturysf.com/product/cassandra-organic-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/cassandra-organic-wordpress-theme/"> 11. Cassandra- Organic Wordpress Theme </a></p> | [<img align="left" width="80" height="80" src="/img/thumb-cassandra.jpg">](https://digitalcenturysf.com/product/cassandra-furniture-wordpress-theme/) <p align="left"><a href="https://digitalcenturysf.com/product/cassandra-furniture-wordpress-theme/"> 12. Cassandra - Furniture Wordpress Theme </a></p> |
 
 
 
@@ -26,21 +26,21 @@ View more themes from this author: https://digitalcenturysf.com
 1. Via The WordPress Dashboard (Easier):   
 	a) Login to your wp-admin account and go to Appearance -> Themes.   
 
-	![](/assets/images/i1.png)  
+	![](/img/i1.png)  
 
 	b) Select "Add New" button and then click on the "Upload Theme" button.    
 
-	![](/assets/images/i2.png)   
+	![](/img/i2.png)   
 
-	![](/assets/images/i3.png)  
+	![](/img/i3.png)  
 	  
 	c) Click on the Browse button and find the cassandra-lite.zip file  and then click on the "Install" button.    
 
-	![](/assets/images/i4.png)  
+	![](/img/i4.png)  
 	
 	d) After the theme has successfully uploaded click Activate and you're done!         
 
-	![](/assets/images/i5.png)  
+	![](/img/i5.png)  
 	
 
  
