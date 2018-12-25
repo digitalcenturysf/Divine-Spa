@@ -7,7 +7,7 @@ View more themes from this author: https://digitalcenturysf.com
 
 ## Demo and Documentation
 * **Demo** : https://digitalcenturysf.com/themes/spa_salon/wordpress/spa/ 
-* **Support Forum** : https://wordpress.org/support/theme/cassandra-lite
+<!-- * **Support Forum** : https://wordpress.org/support/theme/cassandra-lite -->
 
 
 ## Table of Themes
