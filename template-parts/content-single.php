@@ -40,13 +40,15 @@ if ( is_singular() && $numpages > 1 ) {
 }
  ?>
 </div>
-<div class="blog-share-bx">
-  <div class="row">
-    <div class="col-lg-6 col-md-6 tag-bx">
-      <?php if(has_tag()): ?><span> <?php esc_html_e('Tags','divine-spa'); ?>:</span> <?php the_tags( '', ', ', '' ); ?> <?php endif; ?>
-    </div> 
+<?php if(has_tag()): ?>
+  <div class="blog-share-bx">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 tag-bx">
+        <span> <?php esc_html_e('Tags','divine-spa'); ?>:</span> <?php the_tags( '', ', ', '' ); ?> 
+      </div> 
+    </div>
   </div>
-</div>
+<?php endif; ?>
 <?php 
 $divine_spa_author = get_the_author_meta('description');
 if($divine_spa_author):

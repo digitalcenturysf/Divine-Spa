@@ -18,10 +18,11 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div class="blog-author-bx blog-recent-bx">
+
 	<?php
 	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
+		<div class="blog-author-bx blog-recent-bx">
 		<h3><?php esc_html_e('Recent Comments','divine-spa'); ?></h3>
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<div class="nav-links"> 
@@ -44,6 +45,7 @@ if ( post_password_required() ) {
 			</div><!-- .nav-links --> 
 		<?php
 		endif; // Check for comment navigation.
+		echo '</div>';
 	endif; // Check for have_comments().
 
 	// If comments are closed and there are comments, let's leave a little note, shall we?
@@ -52,7 +54,5 @@ if ( post_password_required() ) {
 	<?php
 	endif;  
 	?>
-</div>
-<div class="blog-comment-bx">
-	<?php comment_form(); ?>
-</div>
+ 
+<?php comment_form(); ?> 

@@ -300,11 +300,8 @@ function divine_spa_comment_form_allowed_tags( $defaults ) {
  */   
 add_action( 'comment_form_after_fields', 'divine_spa_add_textarea' );
 add_action( 'comment_form_logged_in_after', 'divine_spa_add_textarea' );
-function divine_spa_add_textarea()
-{
-	if(class_exists('WooCommerce') && !is_product()){
-    	echo '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="'.esc_attr('Your Comment*','divine-spa').'" cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>';
-	}
+function divine_spa_add_textarea() {
+   	echo '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="'.esc_attr('Your Comment*','divine-spa').'" cols="45" rows="8" maxlength="65525"  required="required"></textarea></p>';
 }
 /**
  * remove comment fields

@@ -1059,12 +1059,7 @@ button.sl-prev .fa, button.sl-next .fa {
 }
 .blog-area-content .pagination-area ul {
 	margin-bottom: 0px
-} 
-.blog-single-area .blog-des-bx {
-	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
-	padding-bottom: 40px;
-}
+}  
 .blog-single-area .blog-des-bx > h2 {
 	font-size: 24px;
 	font-weight: bold;
@@ -1135,10 +1130,7 @@ button.sl-prev .fa, button.sl-next .fa {
 .blog-single-area .blog-share-bx .blog-social-bx li a:hover {
 	color: #222;
 	border-color: #d00009
-}
-.blog-single-area .blog-share-bx {
-	margin-bottom: 40px;
-}
+} 
 .blog-single-area .blog-author-bx section {
 	border: 1px solid #ccc;
 	padding: 30px;
@@ -1286,9 +1278,10 @@ ol.comment-list .comment-respond.blog-comment-bx{
 ol.comment-list .comment-respond.blog-comment-bx textarea#comment{
 	margin: 15px 0;
 }
-.comment-respond.blog-comment-bx h3{
-	border-top: 1px solid #ccc;
-	padding-top: 25px;
+.blog-des-bx, 
+.blog-share-bx{
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
 }
 ol.comment-list .comment-respond.blog-comment-bx a#cancel-comment-reply-link {
     float: right;
@@ -1651,4 +1644,8 @@ section.related.products {
 }
 .woocommerce .woocommerce-ordering {
     margin: 0 0 3em;
+}
+.blog-comment-bx,
+.blog-author-bx{
+    padding: 20px 0;
 }
